@@ -2,12 +2,13 @@
     <HEAD>
         <SCRIPT>
             function clickButton() {
-                alert("you clicked me");
+                document.getElementById("test").innerHTML = "You clicked me!";
             }
         </SCRIPT>
     </HEAD>
 
     <BODY>
-        <Button onclick="clickButton">Click me!</Button>
+        <div id="test"></div>
+        <Button onclick="clickButton()">Click me!</Button>
     </BODY>
 </HTML>
